@@ -45,3 +45,4 @@ dependencies:
   - perl-parse-recdescent
   - perl-findbin 
   - papermill
+  - plotly
