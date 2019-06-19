@@ -5,7 +5,6 @@ The [NCBI BLAST+ program](https://blast.ncbi.nlm.nih.gov) finds regions of local
 Recent advances in cloud computing have led to better pipelines for collecting, storing, and analyzing data. You can also take advantage of faster compute times and larger databases by using BLAST+ in the cloud.
 
 In this tutorial, you will learn how to:
-   * [Use BLAST+ on the Command Line](#use-blast+-on-the-command-line)
    * [Get setup for cloud computing](#get-setup-for-cloud-computing)
    * [Use BLAST+ in the cloud](#use-blast+-on-the-cloud)
 
