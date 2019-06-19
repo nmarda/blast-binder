@@ -1,6 +1,6 @@
 # Tutorial
 
-The [(NCBI BLAST+ program)](https://blast.ncbi.nlm.nih.gov) finds regions of local similarity between sequences. It has many features, which are detailed [(here)](https://www.ncbi.nlm.nih.gov/books/NBK279690/).
+The [NCBI BLAST+ program](https://blast.ncbi.nlm.nih.gov) finds regions of local similarity between sequences. It has many features, which are detailed [here](https://www.ncbi.nlm.nih.gov/books/NBK279690/).
 
 Recent advances in cloud computing have led to better pipelines for collecting, storing, and analyzing data. You can also take advantage of faster compute times and larger databases by using BLAST+ in the cloud.
 
@@ -9,11 +9,8 @@ In this tutorial, you will learn how to:
    * [Get setup for cloud computing](#get-setup-for-cloud-computing)
    * [Use BLAST+ in the cloud](#use-blast+-on-the-cloud)
 
-#Use BLAST+ on the Command Line
-<Running BLAST from command line tutorials, link to jupyter notebooks, for now to MY mybinder>
-
-#Get Setup for Cloud Computing
-Cloud computing uses on-demand, scalable, and elastic computational resources for more powerful and efficient processes. Here, we provide instructions for getting setup with a leading cloud service, [(Google Cloud Platform)](https://cloud.google.com/). This process will require a Google account, which you can create [(here)](https://accounts.google.com). It will also require billing information, but GCP currently offers a $300 credit for first-time users. 
+# Get Setup for Cloud Computing
+Cloud computing uses on-demand, scalable, and elastic computational resources for more powerful and efficient processes. Here, we provide instructions for getting setup with a leading cloud service, [Google Cloud Platform](https://cloud.google.com/). This process will require a Google account, which you can create [here](https://accounts.google.com). It will also require billing information, but GCP currently offers a $300 credit for first-time users. 
 
 In a new window, use your Google account to sign into https://console.cloud.google.com/.
 
@@ -28,7 +25,7 @@ You now will see your Cloud Shell session window:
    * To scroll in the Cloud Shell, enable the scrollbar in `Terminal settings` with the wrench icon.
    ![Cloud-Shell-wrench](images/cloud-shell-wrench.png)
 
-##Getting setup on GCP
+## Getting setup on GCP
    * In a new window, sign in at https://console.cloud.google.com/.
    * Click **Activate** to activate the $300 credit.
 ![GCP credit](images/gcp-credit.png)
@@ -39,7 +36,7 @@ You now will see your Cloud Shell session window:
 	* Under “Payment method,” select “add a credit or debit card” and enter your information. You will not be charged without your consent once the trial ends.
 	* Click “Start my free trial” to finish registration.
 
-##Creating a Virtual Machine (VM)
+## Creating a Virtual Machine (VM)
 * Click on the navigation menu in the top left corner and select "Compute Engine".
 <img align="left " width="300" src="images/gcp-instance.png" alt="GCP instance">   
 * Click "Create Instance" on the top bar.  
@@ -52,7 +49,7 @@ You now will see your Cloud Shell session window:
 ![GCP VM cost](images/gcp-vm-cost1.png)  
 * Click “Create”.
 
-##Accessing VM from a local machine
+## Accessing VM from a local machine
 Now that you've created a VM, you must access it from your local computer. On GCP, the easiest way is to SSH from the browser.
 
 Connect to your new VM instance by clicking the "SSH" button
@@ -60,10 +57,10 @@ Connect to your new VM instance by clicking the "SSH" button
 
 Remember to [stop](https://cloud.google.com/compute/docs/instances/stop-start-instance) or [delete](https://cloud.google.com/compute/docs/instances/stop-start-instance) the VM to prevent incurring additional cost.    
 
-#Use BLAST+ in the Cloud
+# Use BLAST+ in the Cloud
 [Docker](https://www.docker.com/) is a virtualization tool. An image is created, providing an analytical environment encapsulating applications and dependencies. This image can be saved and easily shared for others to recreate the same analytical environment across platforms and operating systems. A container is a runtime instance of an image. By using containerization, users can bypass the numerous steps required to compile, configure, and install a Unix-based tool like BLAST+. Additionally, containerization is a lightweight approach to make analysis more findable, accessible, interoperable, reusable (F.A.I.R.).  
 
-##Installing Docker
+## Installing Docker
 Run the following commands to install Docker and add non-root users to run Docker.
 ```
 sudo snap install docker
@@ -75,10 +72,10 @@ exit
 ```
 To confirm the correct installation of Docker, run the command `docker run hello-world`. If correctly installed, you should see ["Hello from Docker!..."](https://docs.docker.com/samples/library/hello-world/)  
 
-##Tips for using Docker
+## Tips for using Docker
 Here are some helpful tips for using Docker. This section is nonessential for executing the rest of the tutorial. 
 
-###Docker run command options
+### Docker run command options
 Below is a list of `docker run` command line [options](https://docs.docker.com/engine/reference/commandline/run/) used in this tutorial.
 
 | Name, short-hand(if available) | Description |
@@ -87,7 +84,7 @@ Below is a list of `docker run` command line [options](https://docs.docker.com/e
 |`--volume` , `-v`|Bind mount a volume|
 |`--workdir` , `-w`| Working directory inside the container|
 
-###Docker run command structure
+### Docker run command structure
 Here we briefly show how a Docker command works. The following command consists of three parts.
 
 ```
