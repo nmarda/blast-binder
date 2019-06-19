@@ -12,9 +12,9 @@ In this tutorial, you will learn how to:
 # Get Setup for Cloud Computing
 Cloud computing uses on-demand, scalable, and elastic computational resources for more powerful and efficient processes. Here, we provide instructions for getting setup with a leading cloud service, [Google Cloud Platform](https://cloud.google.com/). This process will require a Google account, which you can create [here](https://accounts.google.com). It will also require billing information, but GCP currently offers a $300 credit for first-time users. 
 
-In a new window, use your Google account to sign into https://console.cloud.google.com/.
+In a new window, use your Google account to sign into [Google Cloud Platform's Console](https://console.cloud.google.com/).
 
-Click the **Activate Cloud Shell** button at the top right corner of the Google Cloud Platform Console. 
+Click the "Activate Cloud Shell" button at the top right corner of the Google Cloud Platform Console. 
 ![Activate-Cloud-Shell](images/activate-cloud-shell.png)
    
 You now will see your Cloud Shell session window:
@@ -27,14 +27,14 @@ You now will see your Cloud Shell session window:
 
 ## Getting setup on GCP
    * In a new window, sign in at https://console.cloud.google.com/.
-   * Click **Activate** to activate the $300 credit.
+   * Click "Activate" to activate the $300 credit.
 ![GCP credit](images/gcp-credit.png)
-	* Enter your country and check the box indicating that you have read and accept the terms of service.
-	* Under “Account type,” select “Individual.”
-	* Enter your name and address.
-	* Under “How you pay," select “Automatic payments.” This indicates that you will pay costs after you have used the service, either when you have reached your billing threshold or every 30 days, whichever comes first. 
-	* Under “Payment method,” select “add a credit or debit card” and enter your information. You will not be charged without your consent once the trial ends.
-	* Click “Start my free trial” to finish registration.
+    * Enter your country and check the box indicating that you have read and accept the terms of service.
+    * Under “Account type,” select “Individual.”
+    * Enter your name and address.
+    * Under “How you pay," select “Automatic payments.” This indicates that you will pay costs after you have used the service, either when you have reached your billing threshold or every 30 days, whichever comes first. 
+    * Under “Payment method,” select “add a credit or debit card” and enter your information. You will not be charged without your consent once the trial ends.
+    * Click “Start my free trial” to finish registration.
 
 ## Creating a Virtual Machine (VM)
 * Click on the navigation menu in the top left corner and select "Compute Engine".
@@ -42,9 +42,9 @@ You now will see your Cloud Shell session window:
 * Click "Create Instance" on the top bar.  
 * Create an image with the following parameters (choose default if an option is unavailable): 
     * Name: TrialVM
-    * Region: **us-east4 (Northern Virginia)**   
-    * Machine Type: **micro (1 shared vCPU), 0.6 GB memory, f1-micro**
-    * Boot Disk: Click "Change," select **Ubuntu 18.04 LTS,** and click "Select" (Boot disc size is 10 GB).
+    * Region: us-east4 (Northern Virginia)
+    * Machine Type: micro (1 shared vCPU), 0.6 GB memory, f1-micro
+    * Boot Disk: Click "Change," select Ubuntu 18.04 LTS, and click "Select" (Boot disc size is 10 GB).
 * At this point, you should see a cost estimate for this instance on the right side of your window.  
 ![GCP VM cost](images/gcp-vm-cost1.png)  
 * Click “Create”.
@@ -78,7 +78,7 @@ Here are some helpful tips for using Docker. This section is nonessential for ex
 ### Docker run command options
 Below is a list of `docker run` command line [options](https://docs.docker.com/engine/reference/commandline/run/) used in this tutorial.
 
-| Name, short-hand(if available) | Description |
+| Name, short-hand (if available) | Description |
 | :----------------------------  | :---------- |
 |`--rm`|Automatically remove the container when it exits|
 |`--volume` , `-v`|Bind mount a volume|
@@ -466,7 +466,7 @@ In addition, you can run BLAST in [detached mode](https://docs.docker.com/engine
 __When to use__: This is a more practical approach if you have many (e.g., 10 or
 more) BLAST searches to run or you expect the search to take a long time to execute. In this case it may be better to start the BLAST container in detached mode and execute commands on it. 
   
-**NOTE**: Be sure to mount _all_ required directories, as these need to be
+NOTE: Be sure to mount _all_ required directories, as these need to be
 specified when the container is started.
 
 ```
