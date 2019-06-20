@@ -3,15 +3,18 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nmarda/blast-binder/master?filepath=index.ipynb)
 
 *tl;dr:*  
-Click any `launch binder` badge on this page to run command line-based BLAST inside your browser.
+Click `launch binder` to run command line-based BLAST in your browser.
 
 ------
 
 ***BLAST: Basic Local Alignment Search Tool (BLAST+) command-line applications.***
 
-This repository is for running BLAST+ in Jupyter environment provided by [MyBinder.org](https://mybinder.org/).  
-Additionally, having BLAST+ working inside the Jupyter environment with interactive Python adds some convenient features that are illustrated. A utility script for moving command line-based BLAST results into Python is also demonstrated.  
+This repository is for running BLAST+ in Jupyter environment provided by [MyBinder.org](https://mybinder.org/). It also incorporates Python-based features.
 
+This tutorial is largely taken from [Wayne's Bioinformatics Code Portal's Blast Binder](https://github.com/fomightez/blast-binder). The following text is the software and usage attributions that he cites. It is your responsibility to ensure that your usage of software is in conmpliance with all applicable usage requirements.
+
+
+# Readme text from Wayne's Blast Binder
 -------
 
 Software
